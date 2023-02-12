@@ -10,12 +10,14 @@ class PriorityQueue(object):
     def pop(self):
         return heapq.heappop(self._queue)[-1]
 
+
 class Item:
     def __init__(self, name):
         self.name = name
     
     def __repr__(self):
         return "Item({0!r})".format(self.name)
+
 
 def test_priority_queue():
     q = PriorityQueue()

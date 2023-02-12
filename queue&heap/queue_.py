@@ -28,6 +28,7 @@ class Queue(object):
     def __repr__(self):
         return repr(self.items)
     
+    
 if __name__ == "__main__":
     queue = Queue()
     print(f"큐가 비었나요? {queue.is_empty()}")

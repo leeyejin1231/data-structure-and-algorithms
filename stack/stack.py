@@ -27,6 +27,7 @@ class Stack(object):
     def __repr__(self):
         return repr(self.items)
 
+
 if __name__ == "__main__":
     stack = Stack()
     print(f"스택이 비었나요? {stack.is_empty()}")

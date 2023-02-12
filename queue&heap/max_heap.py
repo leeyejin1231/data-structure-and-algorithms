@@ -51,6 +51,7 @@ class Heapify(object):
             i = self.parent(i)
         self.data[i] = item
 
+
 def test_heapify():
     l1 = [3, 2, 5, 1, 7, 8, 2]
     h = Heapify(l1)

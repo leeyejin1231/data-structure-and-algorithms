@@ -3,6 +3,7 @@ class Node(object):
         self.value = value
         self.pointer = pointer # 이전 거 저장
 
+
 class Stack(object):
     def __init__(self):
         self.head = None
@@ -39,6 +40,7 @@ class Stack(object):
             print(node.value, end=' ')
             node = node.pointer
         print()
+
 
 if __name__ == "__main__":
     stack = Stack()

@@ -1,5 +1,5 @@
 class Node(object):
-    def __init__(self, value = None, pointer = None):
+    def __init__(self, value=None, pointer=None):
         self.value = value
         self.pointer = pointer # 새로운 거 저장
 
@@ -44,6 +44,7 @@ class LinkedQueue(object):
             print(node.value, end=' ')
             node = node.pointer
         print()
+        
 
 if __name__ == "__main__":
     queue = LinkedQueue()
