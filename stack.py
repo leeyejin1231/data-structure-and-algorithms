@@ -2,7 +2,7 @@ class Stack(object):
     def __init__(self):
         self.items = []
 
-    def isEmpty(self):
+    def is_empty(self):
         return not bool(self.items)
 
     def push(self, value):
@@ -29,7 +29,7 @@ class Stack(object):
 
 if __name__ == "__main__":
     stack = Stack()
-    print(f"스택이 비었나요? {stack.isEmpty()}")
+    print(f"스택이 비었나요? {stack.is_empty()}")
     print("스택에 숫자 0~9를 추가합니다.")
     for i in range(10):
         stack.push(i)
@@ -37,5 +37,5 @@ if __name__ == "__main__":
     print(f"peek: {stack.peek()}")
     print(f"pop: {stack.pop()}")
     print(f"peek: {stack.peek()}")
-    print(f"스택이 비었나요? {stack.isEmpty()}")
+    print(f"스택이 비었나요? {stack.is_empty()}")
     print(stack)

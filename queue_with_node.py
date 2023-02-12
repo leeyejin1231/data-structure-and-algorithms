@@ -9,7 +9,7 @@ class LinkedQueue(object):
         self.tail = None
         self.count = 0
     
-    def isEmpty(self):
+    def is_empty(self):
         return not bool(self.count)
     
     def dequeue(self):
@@ -47,11 +47,11 @@ class LinkedQueue(object):
 
 if __name__ == "__main__":
     queue = LinkedQueue()
-    print(f"큐가 비었나요? {queue.isEmpty()}")
+    print(f"큐가 비었나요? {queue.is_empty()}")
     print("스택에 숫자 0~9를 추가합니다.")
     for i in range(10):
         queue.enqueue(i)
-    print(f"큐가 비었나요? {queue.isEmpty()}")
+    print(f"큐가 비었나요? {queue.is_empty()}")
     queue._print()
 
     print(f"큐 크기: {queue.size()}")

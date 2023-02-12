@@ -2,7 +2,7 @@ class Queue(object):
     def __init__(self):
         self.items = []
     
-    def isEmpty(self):
+    def is_empty(self):
         return not bool(self.items)
     
     def enqueue(self, item):
@@ -30,7 +30,7 @@ class Queue(object):
     
 if __name__ == "__main__":
     queue = Queue()
-    print(f"큐가 비었나요? {queue.isEmpty()}")
+    print(f"큐가 비었나요? {queue.is_empty()}")
     print("스택에 숫자 0~9를 추가합니다.")
     for i in range(10):
         queue.enqueue(i)
@@ -38,5 +38,5 @@ if __name__ == "__main__":
     print(f"peek: {queue.peek()}")
     print(f"dequeue: {queue.dequeue()}")
     print(f"peek: {queue.peek()}")
-    print(f"큐가 비었나요? {queue.isEmpty()}")
+    print(f"큐가 비었나요? {queue.is_empty()}")
     print(queue)
